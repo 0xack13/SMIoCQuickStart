@@ -20,6 +20,7 @@ namespace SMIoCQuickStart
         private static IContainer ConfigureDependencies() {
             return new Container(x => {
                 x.For<IAppEngine>().Use<AppEngine>();
+                //Could be changed to "EnglishGreeter"
                 x.For<IGreeter>().Use<FrenchGreeter>();
                 x.For<IOutputDisplay>().Use<ConsoleOutputDisplay>();
             });
