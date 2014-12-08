@@ -21,7 +21,7 @@ namespace SMIoCQuickStart
             return new Container(x => {
                 x.For<IAppEngine>().Use<AppEngine>();
                 //Could be changed to "EnglishGreeter"
-                x.For<IGreeter>().Use<ArabicGreeter>();
+                x.For<IGreeter>().Use<ArabicGreeter>().Named("appEngine1");
                 x.For<IOutputDisplay>().Use<ConsoleOutputDisplay>();
             });
         }
