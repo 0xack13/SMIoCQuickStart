@@ -15,6 +15,11 @@ namespace SMIoCQuickStart
             
             IAppEngine appEngine = container.GetInstance<IAppEngine>();
             appEngine.Run();
+            var co = container.TryGetInstance<IGreeter>("appEngine1").GetGreeting();
+            string msg = co.Equals(null) ? "Nope!" : "Yup!";
+            Console.WriteLine("Here you go: " + msg + "and :" + co.ToString());
+
+            
         }
  
         private static IContainer ConfigureDependencies() {
@@ -22,6 +27,9 @@ namespace SMIoCQuickStart
                 x.For<IAppEngine>().Use<AppEngine>();
                 //Could be changed to "EnglishGreeter"
                 x.For<IGreeter>().Use<ArabicGreeter>().Named("appEngine1");
+                
+                //var ig = ObjectFactory.GetNamedInstance<ArabicGreeter>("appEngine1");
+                //ig.GetGreeting();
                 x.For<IOutputDisplay>().Use<ConsoleOutputDisplay>();
             });
         }
