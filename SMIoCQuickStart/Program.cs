@@ -21,7 +21,7 @@ namespace SMIoCQuickStart
             return new Container(x => {
                 x.For<IAppEngine>().Use<AppEngine>();
                 //Could be changed to "EnglishGreeter"
-                x.For<IGreeter>().Use<FrenchGreeter>();
+                x.For<IGreeter>().Use<ArabicGreeter>();
                 x.For<IOutputDisplay>().Use<ConsoleOutputDisplay>();
             });
         }
@@ -59,6 +59,14 @@ namespace SMIoCQuickStart
         public string GetGreeting()
         {
             return "Hello";
+        }
+    }
+
+    public class ArabicGreeter : IGreeter
+    {
+        public string GetGreeting()
+        {
+            return "سلام";
         }
     }
 
