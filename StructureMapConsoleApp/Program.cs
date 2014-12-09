@@ -13,5 +13,18 @@ namespace StructureMapConsoleApp
         }
     }
 
+    public class cash : IPayMethod
+    {
+        public string Pay()
+        {
+            return "Paying in Cash!";
+        }
 
+        public int PaymentAmount
+        {
+            get { return 0; }
+        }
+    }
+
+    public class 
 }
