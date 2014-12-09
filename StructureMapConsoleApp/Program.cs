@@ -14,12 +14,12 @@ namespace StructureMapConsoleApp
             //ObjectFactory is the old way 
             var container = new Container();
             container.Configure(x =>
-                x.For<IPayMethod>().Use<cash>());
+                x.For<IPayMethod>().Use<cash>().Named("Cash"));
             container.Configure(x =>
                 x.For<IPayMethod>().Use<credit>().Named("CC"));
 
             var payee = container.GetInstance<Payee>();
-            payee.pay();
+            payee.Pay();
             Console.ReadLine();
         }
     }
@@ -70,7 +70,7 @@ namespace StructureMapConsoleApp
             get { return payMethod.PaymentAmount;  }
         }
 
-        public void pay()
+        public void Pay()
         {
             Console.WriteLine(payMethod.pay());
         }
