@@ -13,6 +13,7 @@ namespace MessagingIoC
         {
             IDisplayMessage idm = new DisplayMessage();//creating instance of class A
             ContainerBootstrapper.BootstrapStructureMap();
+            
             var adm = StructureMap.ObjectFactory.GetInstance<AnotherDisplayMessage>();
 
             //assign the instance to the classB property of class A 

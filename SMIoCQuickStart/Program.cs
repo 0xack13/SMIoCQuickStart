@@ -16,6 +16,7 @@ namespace SMIoCQuickStart
             IAppEngine appEngine = container.GetInstance<IAppEngine>();
             appEngine.Run();
             var co = container.TryGetInstance<IGreeter>("appEngine1").GetGreeting();
+
             string msg = co.Equals(null) ? "Nope!" : "Yup!";
             Console.WriteLine("Here you go: " + msg + "and :" + co.ToString());
 
