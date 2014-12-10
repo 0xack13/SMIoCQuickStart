@@ -20,6 +20,9 @@ namespace StructureMapConsoleApp
 
             var payee = container.GetInstance<Payee>();
             payee.Pay();
+
+            Console.WriteLine(container.WhatDoIHave());
+
             Console.ReadLine();
         }
     }
