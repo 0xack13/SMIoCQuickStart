@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace ASPActionFilterApp.Filters
 {
+    //Where the Filter can be used
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)] 
     public class ActionSpeedProfilerAttribute : FilterAttribute, IActionFilter
     {
