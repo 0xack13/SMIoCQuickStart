@@ -10,14 +10,11 @@ namespace SetterInjectSM
 {
     public class Injected
     {
-        public string Name { get; set; }
-            
+        public string Name { get; set; }   
         public Injected()
         {
             Name = "me!"; // Guid.NewGuid().ToString("N");
         }
-
-      
     }
 
     public class Product

@@ -12,7 +12,7 @@ namespace ASPActionFilterApp.Filters
     public class ActionSpeedProfilerAttribute : FilterAttribute, IActionFilter
     {
         private Stopwatch timer;
-        public void OnActionExecuted(ActionExecutedContext filterContext)
+        public void OnExecuted(ActionExecutedContext filterContext)
         {
             //throw new NotImplementedException();
             timer.Stop();
