@@ -10,7 +10,11 @@ namespace mongodbProvider.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            //return View();
+            TempData["CurrentDateTime"] = DateTime.Now;
+            TempData["MeaningOfLife"] = 42;
+
+            return Content("TempData Updated");
         }
 
         public ActionResult About()
