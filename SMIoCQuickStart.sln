@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetterInjectSM", "SetterInj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPActionFilterApp", "ASPActionFilterApp\ASPActionFilterApp.csproj", "{CFD1B8A3-333C-4E30-A3FD-F3C4F08A69EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STTempDataExtensions", "STTempDataExtensions\STTempDataExtensions.csproj", "{D4F9D479-590A-446C-A064-8D6A9462371B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mongodbProvider", "mongodbProvider\mongodbProvider.csproj", "{B82950E8-761C-4A3C-98EF-5C5ECF414313}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{CFD1B8A3-333C-4E30-A3FD-F3C4F08A69EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFD1B8A3-333C-4E30-A3FD-F3C4F08A69EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFD1B8A3-333C-4E30-A3FD-F3C4F08A69EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4F9D479-590A-446C-A064-8D6A9462371B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4F9D479-590A-446C-A064-8D6A9462371B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4F9D479-590A-446C-A064-8D6A9462371B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4F9D479-590A-446C-A064-8D6A9462371B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82950E8-761C-4A3C-98EF-5C5ECF414313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82950E8-761C-4A3C-98EF-5C5ECF414313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82950E8-761C-4A3C-98EF-5C5ECF414313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82950E8-761C-4A3C-98EF-5C5ECF414313}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
