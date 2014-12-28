@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+    
+        Contents of TempData:
+
+        <br />
+        <br />
+
+        @foreach (var tempDataItem in TempData) { 
+        @tempDataItem.Key 
+        @tempDataItem.Value
+        } 
+
+    </div>
+</body>
+</html>

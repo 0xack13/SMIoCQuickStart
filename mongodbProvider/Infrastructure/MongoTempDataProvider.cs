@@ -1,4 +1,5 @@
 ﻿using MongoDB;
+using MongoDB.Configuration;
 using mongodbProvider.Models;
 using System;
 using System.Collections.Generic;
@@ -21,9 +22,12 @@ namespace mongodbProvider.Infrastructure
 
         public IDictionary<string, object> LoadTempData(ControllerContext controllerContext)
         {
+            var config = new MongoConfigurationBuilder();
+            config.ConnectionString("Server=127.0.0.1");
+
             var tempDataDictionary = new Dictionary<string, object>();
 
-            using (Mongo mongo = new Mongo())
+            using (Mongo mongo = new Mongo(config.BuildConfiguration()))
             {
                 mongo.Connect();
 

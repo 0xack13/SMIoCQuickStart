@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mongodbProvider.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,7 +7,7 @@ using System.Web.Mvc;
 
 namespace mongodbProvider.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : MongoControllerBase
     {
         public ActionResult Index()
         {
@@ -28,6 +29,11 @@ namespace mongodbProvider.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult ReadTempData()
+        {
             return View();
         }
     }
