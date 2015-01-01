@@ -164,6 +164,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201501011018152_InitialCreate.cs" />
+    <Compile Include="Migrations\201501011018152_InitialCreate.Designer.cs">
+      <DependentUpon>201501011018152_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201501011023304_Birthdate.cs" />
+    <Compile Include="Migrations\201501011023304_Birthdate.Designer.cs">
+      <DependentUpon>201501011023304_Birthdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201501011030024_Birthdate Capital.cs" />
+    <Compile Include="Migrations\201501011030024_Birthdate Capital.Designer.cs">
+      <DependentUpon>201501011030024_Birthdate Capital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -239,6 +252,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201501011018152_InitialCreate.resx">
+      <DependentUpon>201501011018152_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501011023304_Birthdate.resx">
+      <DependentUpon>201501011023304_Birthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501011030024_Birthdate Capital.resx">
+      <DependentUpon>201501011030024_Birthdate Capital.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

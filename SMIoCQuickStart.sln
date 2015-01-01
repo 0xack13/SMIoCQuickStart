@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STTempDataExtensions", "STT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mongodbProvider", "mongodbProvider\mongodbProvider.csproj", "{B82950E8-761C-4A3C-98EF-5C5ECF414313}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "customProfile", "customProfile\customProfile.csproj", "{8631DFAE-95A5-46C3-9645-6D2EDDCB8399}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "customProfile", "customProfile\customProfile.csproj", "{7C1B2785-5924-4FEF-B08E-DC0A6838DC52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,10 +65,10 @@ Global
 		{B82950E8-761C-4A3C-98EF-5C5ECF414313}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B82950E8-761C-4A3C-98EF-5C5ECF414313}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B82950E8-761C-4A3C-98EF-5C5ECF414313}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8631DFAE-95A5-46C3-9645-6D2EDDCB8399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8631DFAE-95A5-46C3-9645-6D2EDDCB8399}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8631DFAE-95A5-46C3-9645-6D2EDDCB8399}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8631DFAE-95A5-46C3-9645-6D2EDDCB8399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C1B2785-5924-4FEF-B08E-DC0A6838DC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C1B2785-5924-4FEF-B08E-DC0A6838DC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C1B2785-5924-4FEF-B08E-DC0A6838DC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C1B2785-5924-4FEF-B08E-DC0A6838DC52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

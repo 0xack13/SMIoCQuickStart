@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace customProfile.Models
@@ -79,6 +80,10 @@ namespace customProfile.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        //Add birthdate
+        public DateTime BirthDate { get; set; }
+
     }
 
     public class ResetPasswordViewModel
@@ -109,4 +114,5 @@ namespace customProfile.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
+
 }
